@@ -1,6 +1,8 @@
+//Dummy data
 const products = [{name: 'Test Product', info: 'This is a test product.', icon: 'http://placehold.it/200x200', link: './items/product01.html'}];
 
 $(function(){
+    //Build a product card for each item in products
     products.forEach(function(item){
         $('#products').append(
             '<div class="card product-card">\n' +
