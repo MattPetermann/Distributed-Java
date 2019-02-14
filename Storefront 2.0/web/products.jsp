@@ -1,4 +1,4 @@
-<!HTML>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="../../Storefront/index.html">Home</a>
+                <a class="nav-link" href="./index.jsp">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="./products.jsp">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cart.html">Cart</a>
+                <a class="nav-link" href="./cart.jsp">Cart</a>
             </li>
         </ul>
     </div>

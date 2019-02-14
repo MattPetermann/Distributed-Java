@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+.product-card {
+    margin: auto;
+    width: 33%;
+}
+
+.product-description {
+    display: inline-block;
+}
+
+.product-image {
+    display: inline-block;
+    width: 25%;
+}
