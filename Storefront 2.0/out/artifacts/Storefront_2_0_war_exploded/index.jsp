@@ -21,7 +21,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav justify-content-between">
       <li class="nav-item active">
         <a class="nav-link" href="./index.jsp">Home</a>
       </li>
@@ -34,8 +34,10 @@
     </ul>
   </div>
 </nav>
-<div class="jumbotron">
-  <h1>Welcome to -storefront-</h1>
-</div>
 </body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to -storefront-</h1>
+  </div>
+</div>
 </html>

@@ -34,8 +34,10 @@
     </ul>
   </div>
 </nav>
-<div class="jumbotron">
-  <h1>Welcome to -storefront-</h1>
-</div>
 </body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to -storefront-</h1>
+  </div>
+</div>
 </html>
