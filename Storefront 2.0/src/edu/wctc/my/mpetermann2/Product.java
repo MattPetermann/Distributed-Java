@@ -6,11 +6,11 @@ public class Product {
     private String imageUrl;
     private double price;
 
-    public Product(String n, String d, String i, double p){
-        name = n;
-        description = d;
-        imageUrl = i;
-        price = p;
+    public Product(String name, String description, String url, double price){
+        this.name = name;
+        this.description = description;
+        this.imageUrl = url;
+        this.price = price;
     }
 
     public String getName() {

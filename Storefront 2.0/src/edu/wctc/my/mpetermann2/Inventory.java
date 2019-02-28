@@ -8,9 +8,9 @@ public class Inventory {
     private Inventory() {
         inv = new ArrayList<>();
 
-        inv.add(new Product("Product 1", "This is product one.", "http://placehold.it/240x240", 7.99));
-        inv.add(new Product("Product 2", "This is product two.", "http://placehold.it/240x240", 8.99));
-        inv.add(new Product("Product 3", "This is product three.", "http://placehold.it/240x240", 9.99));
+        inv.add(new Product("Nevada Jack Poker Chips", "25 count", "http://placehold.it/240x240", 19.99));
+        inv.add(new Product("Faded Spades Playing Cards", "100% plastic", "http://placehold.it/240x240", 14.99));
+        inv.add(new Product("Acrylic Dealer Puck", "4\" diameter", "http://placehold.it/240x240", 9.99));
     }
 
     public static ArrayList<Product> getInventory() {
