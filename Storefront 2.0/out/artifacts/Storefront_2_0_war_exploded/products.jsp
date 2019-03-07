@@ -1,6 +1,7 @@
 <%@ page import="edu.wctc.my.mpetermann2.Inventory" %>
 <%@ page import="edu.wctc.my.mpetermann2.Product" %>
 <script><%@include file="./search.js"%></script>
+<script><%@include file="./addToCart.js"%></script>
 <div class="jumbotron">
     <h1 class="display-1">Products</h1>
 </div>
@@ -51,7 +52,7 @@
                     <p><%=p.getDescription()%></p>
                 </div>
                 <div class="modal-footer">
-                    <form class="fullAdd" method="post">
+                    <form class="fullAdd" method="post" data-id="<%=p.getId()%>" data-modal="#_<%=p.getId()%>">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="quantity">Qty.</label>
@@ -78,7 +79,7 @@
             <button class="btn btn-primary" data-toggle="modal" data-target="#_<%=p.getId()%>">
                 <span class="fa fa-search-plus"></span> View More
             </button>
-            <form class="quickAdd" method="post">
+            <form class="quickAdd" method="post" data-id="<%=p.getId()%>">
                 <button class="btn btn-success">
                     <span class="fa fa-shopping-cart"></span> Quick Add
                 </button>

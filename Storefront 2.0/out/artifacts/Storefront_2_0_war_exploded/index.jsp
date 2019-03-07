@@ -17,7 +17,7 @@
   <title>Storefront</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -44,7 +44,7 @@
 <% if(pageName.equals("products")) { %>
     <%@ include file="./products.jsp" %>
 <% } %>
-<% if(pageName.equals("cart")) { %>
+<% if (pageName.equals("cart")) { %>
     <%@ include file="./cart.jsp" %>
 <% } %>
 <% if(pageName.equals("")) { %>

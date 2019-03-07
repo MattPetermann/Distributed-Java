@@ -33,6 +33,10 @@ ul.carousel-indicators li {
     width: 100%;
 }
 
+.fixed-top {
+    box-shadow: gray 0 5px 20px 0;
+}
+
 .fullAdd {
     display: inline;
     margin-bottom: 0;
@@ -40,6 +44,10 @@ ul.carousel-indicators li {
 
 .quickAdd {
     display: inline;
+}
+
+#cartCount {
+    color: #e74c3c;
 }
 
 #search {
