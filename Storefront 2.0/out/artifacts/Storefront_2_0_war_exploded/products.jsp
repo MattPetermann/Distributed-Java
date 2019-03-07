@@ -25,8 +25,10 @@
                 <div class="modal-body">
                     <div id="carousel_<%=p.getId()%>" class="carousel slide mb-3" data-ride="carousel" data-interval="false">
                         <ul class="carousel-indicators">
-                            <% for(int i=0; i<p.getImageUrls().length; i++) { %>
-                                <li data-target="#carousel_<%=p.getId()%>" data-slide-to="<%=i%>" class=<%= i==0 ? "active" : "" %>></li>
+                            <% if(p.getImageUrls().length > 1) { %>
+                                <% for(int i=0; i<p.getImageUrls().length; i++) { %>
+                                    <li data-target="#carousel_<%=p.getId()%>" data-slide-to="<%=i%>" class=<%= i==0 ? "active" : "" %>></li>
+                                <% } %>
                             <% } %>
                         </ul>
                         <div class="carousel-inner">
@@ -36,12 +38,14 @@
                                 </div>
                             <% } %>
                         </div>
-                        <a class="carousel-control-prev" href="#carousel_<%=p.getId()%>" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel_<%=p.getId()%>" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
+                        <% if(p.getImageUrls().length > 1) { %>
+                            <a class="carousel-control-prev" href="#carousel_<%=p.getId()%>" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel_<%=p.getId()%>" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        <% } %>
                     </div>
                     <h4>$<%=p.getPrice()%></h4>
                     <p><%=p.getDescription()%></p>
