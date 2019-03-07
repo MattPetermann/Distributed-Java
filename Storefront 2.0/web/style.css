@@ -33,6 +33,15 @@ ul.carousel-indicators li {
     width: 100%;
 }
 
+.fullAdd {
+    display: inline;
+    margin-bottom: 0;
+}
+
+.quickAdd {
+    display: inline;
+}
+
 #search {
     display: block;
     margin: auto;

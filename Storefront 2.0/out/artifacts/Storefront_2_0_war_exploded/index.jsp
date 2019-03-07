@@ -32,7 +32,7 @@
     </ul>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="cart"><span class="fa fa-shopping-cart"></span> Cart</a>
+        <a class="nav-link" href="cart"><span class="fa fa-shopping-cart"></span> Cart (<span id="cartCount">0</span>)</a>
       </li>
     </ul>
   </div>

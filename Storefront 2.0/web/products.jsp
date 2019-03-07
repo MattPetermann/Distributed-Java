@@ -51,15 +51,17 @@
                     <p><%=p.getDescription()%></p>
                 </div>
                 <div class="modal-footer">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="quantity">Qty.</label>
+                    <form class="fullAdd" method="post">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="quantity">Qty.</label>
+                            </div>
+                            <input type="number" name="quantity" id="quantity" class="form-control" value="1" min="1" step="1"/>
+                            <div class="input-group-append">
+                                <button class="btn btn-success"><span class="fa fa-shopping-cart"></span> Add to Cart</button>
+                            </div>
                         </div>
-                        <input type="number" name="quantity" id="quantity" class="form-control" value="1" min="1" step="1"/>
-                        <div class="input-group-append">
-                            <button class="btn btn-success"><span class="fa fa-shopping-cart"></span> Add to Cart</button>
-                        </div>
-                    </div>
+                    </form>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -76,7 +78,11 @@
             <button class="btn btn-primary" data-toggle="modal" data-target="#_<%=p.getId()%>">
                 <span class="fa fa-search-plus"></span> View More
             </button>
-            <button class="btn btn-success"><span class="fa fa-shopping-cart"></span> Quick Add</button>
+            <form class="quickAdd" method="post">
+                <button class="btn btn-success">
+                    <span class="fa fa-shopping-cart"></span> Quick Add
+                </button>
+            </form>
         </div>
     </div>
     <% } %>

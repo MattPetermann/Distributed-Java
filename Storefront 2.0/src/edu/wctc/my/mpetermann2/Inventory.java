@@ -44,7 +44,9 @@ public class Inventory {
                         "Use in your Texas Holdem poker games.",
                 "The button is double sided with one side off white and one side black and the word Dealer " +
                         "carved on both sides.",
-                new String[]{"https://images-na.ssl-images-amazon.com/images/I/41qmKpo1tdL.jpg"},
+                new String[]{
+                        "https://images-na.ssl-images-amazon.com/images/I/41qmKpo1tdL.jpg"
+                },
                 8.99));
     }
 
