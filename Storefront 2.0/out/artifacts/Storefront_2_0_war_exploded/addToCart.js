@@ -13,6 +13,20 @@ $(function() {
     var add = function(form, qty) {
         var id = form.data('id');
         var cartSpan = $('#cartCount');
+
         cartSpan.text(parseInt(cartSpan.text()) + parseInt(qty));
+        animateCart();
     };
+
+    var animateCart = function() {
+        var el = $('#cartLink');
+        el.addClass('animated shake');
+
+        function handleAnimationEnd() {
+            el.removeClass('animated shake');
+            el.removeEventListener('animationend', handleAnimationEnd);
+        }
+
+        el.on('animationend', handleAnimationEnd);
+    }
 });
