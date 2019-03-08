@@ -21,12 +21,6 @@ $(function() {
     var animateCart = function() {
         var el = $('#cartLink');
         el.addClass('animated shake');
-
-        function handleAnimationEnd() {
-            el.removeClass('animated shake');
-            el.removeEventListener('animationend', handleAnimationEnd);
-        }
-
-        el.on('animationend', handleAnimationEnd);
+        el.on('animationend', function() { el.removeClass('animated shake') });
     }
 });

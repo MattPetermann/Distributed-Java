@@ -79,7 +79,7 @@
             <button class="btn btn-primary" data-toggle="modal" data-target="#_<%=p.getId()%>">
                 <span class="fa fa-search-plus"></span> View More
             </button>
-            <form class="quickAdd" method="post" data-id="<%=p.getId()%>">
+            <form class="quickAdd" method="post" action="AddToCart" data-id="<%=p.getId()%>">
                 <button class="btn btn-success">
                     <span class="fa fa-shopping-cart"></span> Quick Add
                 </button>
