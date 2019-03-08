@@ -16,6 +16,10 @@ $(function() {
 
         cartSpan.text(parseInt(cartSpan.text()) + parseInt(qty));
         animateCart();
+
+        $.get("AddToCart", {productId: id, quantity: qty}).done(function(response){
+            console.log(response);
+        });
     };
 
     var animateCart = function() {

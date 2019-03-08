@@ -6,15 +6,23 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-@WebServlet(name = "AddToCart")
+@WebServlet("/AddToCart")
 public class AddToCart extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.print("test");
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //Get values from the request
+        String id = request.getParameter("productId");
+        String qty = request.getParameter("quantity");
+
+        //Create a browser cookie for cart items
+
+        //Return
+        response.setContentType("text/plain");
+        response.getWriter().write(id + " " + qty);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }
