@@ -21,7 +21,7 @@ $(function() {
         animateCart();
 
         $.get("AddToCart", {productId: id, quantity: qty}).done(function(response){
-            console.log(response);
+
         });
     };
 

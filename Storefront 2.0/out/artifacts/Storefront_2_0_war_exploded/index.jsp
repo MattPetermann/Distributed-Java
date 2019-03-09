@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mattp
-  Date: 2/13/2019
-  Time: 7:18 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -38,6 +31,7 @@
     </ul>
   </div>
 </nav>
+<!--Render a different body based on the url-->
 <%
   String uri = request.getRequestURI();
   String pageName = uri.substring(uri.lastIndexOf("/")+1);
