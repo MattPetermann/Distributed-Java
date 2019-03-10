@@ -1,4 +1,5 @@
 <script><%@include file="./getCart.js"%></script>
+<script><%@include file="./editCart.js"%></script>
 <div class="jumbotron">
     <h1 class="display-1">Shopping Cart</h1>
 </div>

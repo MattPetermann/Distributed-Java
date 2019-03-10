@@ -20,6 +20,14 @@
         <url-pattern>/GetCart/*</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>DeleteFromCart</servlet-name>
+        <servlet-class>edu.wctc.my.mpetermann2.DeleteFromCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFromCart</servlet-name>
+        <url-pattern>/DeleteFromCart/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>index.jsp</jsp-file>
     </servlet>
