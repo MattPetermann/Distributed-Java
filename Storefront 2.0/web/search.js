@@ -2,9 +2,9 @@ $(function() {
     $('#search').on('submit', function(e){
         e.preventDefault();
         $('.product-card').each( function() {
-            $(this).hide();
+            $(this).parent().hide();
             if($(this).data('title').toUpperCase().indexOf($('#searchField').val().toUpperCase()) != -1){
-                $(this).show();
+                $(this).parent().show();
             }
         });
     });

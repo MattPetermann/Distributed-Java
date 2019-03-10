@@ -52,6 +52,10 @@ ul.carousel-indicators li {
     margin-bottom: 0;
 }
 
+.product-card {
+    height: 75%;
+}
+
 .right-align {
     text-align: right;
 }

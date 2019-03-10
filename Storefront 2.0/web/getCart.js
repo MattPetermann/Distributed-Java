@@ -24,11 +24,12 @@ var renderCart = function(jsonString) {
                 '<td>' + (i+1) + '</td>'+
                 '<td>' + name + '</td>'+
                 '<td>'+
-                    '<input class="form-control form-control-sm" '+
+                    '<input class="form-control form-control-sm quantityChange" '+
                             'type="number" '+
                             'min="1" '+
                             'step="1" '+
-                            'value=' + qty + ' />'+
+                            'value=' + qty +
+                            ' data-edit=' + id + ' />'+
                 '</td>'+
                 '<td>'+
                     '<button class="btn btn-danger btn-sm delete" data-remove="' + id + '">X</button>'+
@@ -37,6 +38,7 @@ var renderCart = function(jsonString) {
         );
     }
 
+    //Display proper items
     if(json.cart.length === 0) {
         $('#empty').show();
         $('#cartTable').hide();

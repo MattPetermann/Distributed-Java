@@ -1,11 +1,15 @@
 <!--Access Inventory and Product classes-->
 <%@ page import="edu.wctc.my.mpetermann2.Inventory" %>
 <%@ page import="edu.wctc.my.mpetermann2.Product" %>
+<%@ page import="java.text.DecimalFormat" %>
 
 <!--Search and cart operations-->
 <script><%@include file="./cartAnimations.js"%></script>
 <script><%@include file="./search.js"%></script>
 <script><%@include file="./addToCart.js"%></script>
+
+<!--Decimal format for prices-->
+<% DecimalFormat f = new DecimalFormat("#.00"); %>
 
 <!--Jumbotron with title-->
 <div class="jumbotron">
@@ -22,7 +26,7 @@
     </div>
 </form>
 
-<div id="products" class="card-deck mb-3">
+<div id="products" class="row mb-3">
     <!--Loop through all products in the iventory-->
     <% for(Product p : Inventory.getInventory()) { %>
         <!--Create a modal window for each item-->
@@ -59,7 +63,7 @@
                                 </a>
                             <% } %>
                         </div>
-                        <h4>$<%=p.getPrice()%></h4>
+                        <h4>$<%=f.format(p.getPrice())%></h4>
                         <p><%=p.getDescription()%></p>
                     </div>
                     <div class="modal-footer">
@@ -82,23 +86,26 @@
         </div>
 
         <!--Display a card for each product-->
-        <div class="card product-card" data-title="<%=p.getName()%>">
-            <img class="card-img-top" src="<%=p.getImageUrls()[0]%>"/>
-            <div class="card-body">
-                <h4 class="card-title"><%=p.getName()%> <small>$<%=p.getPrice()%></small></h4>
-                <p class="card-text"><%=p.getSummary()%></p>
-            </div>
-            <div class="card-footer">
-                <!--Bind each card to its respective modal-->
-                <button class="btn btn-primary" data-toggle="modal" data-target="#_<%=p.getId()%>">
-                    <span class="fa fa-search-plus"></span> View More
-                </button>
-                <!--Quick add one of this item to the cart-->
-                <form class="quickAdd" data-id="<%=p.getId()%>">
-                    <button class="btn btn-success">
-                        <span class="fa fa-shopping-cart"></span> Quick Add
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-2 product-column">
+            <div class="card product-card"
+                 data-title="<%=p.getName()%>">
+                <img class="card-img-top" src="<%=p.getImageUrls()[0]%>"/>
+                <div class="card-body">
+                    <h4 class="card-title"><%=p.getName()%> <small>$<%=f.format(p.getPrice())%></small></h4>
+                    <p class="card-text"><%=p.getSummary()%></p>
+                </div>
+                <div class="card-footer">
+                    <!--Bind each card to its respective modal-->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#_<%=p.getId()%>">
+                        <span class="fa fa-search-plus"></span> View More
                     </button>
-                </form>
+                    <!--Quick add one of this item to the cart-->
+                    <form class="quickAdd" data-id="<%=p.getId()%>">
+                        <button class="btn btn-success">
+                            <span class="fa fa-shopping-cart"></span> Quick Add
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     <% } %>

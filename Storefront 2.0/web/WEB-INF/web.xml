@@ -28,6 +28,14 @@
         <url-pattern>/DeleteFromCart/*</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>EditCart</servlet-name>
+        <servlet-class>edu.wctc.my.mpetermann2.EditCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditCart</servlet-name>
+        <url-pattern>/EditCart/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>index.jsp</jsp-file>
     </servlet>

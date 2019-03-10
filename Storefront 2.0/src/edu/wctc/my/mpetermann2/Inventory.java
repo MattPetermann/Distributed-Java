@@ -48,6 +48,67 @@ public class Inventory {
                         "https://images-na.ssl-images-amazon.com/images/I/41qmKpo1tdL.jpg"
                 },
                 8.99));
+        inv.add(new Product(
+                3,
+                "BBO Poker Ultimate Folding Poker Table for 10 Players with Felt Playing Surface, " +
+                        "92 x 44-Inch Oval",
+                "Compact enough to fit into your SUV, the easily portable Ultimate poker table from BBO Poker " +
+                        "seats up to 10 and folds down for easy storage. The Ultimate has heavy duty steel folding legs, " +
+                        "a sturdy reinforced frame, an easy-to-clean faux leather vinyl armrest (which is removable for " +
+                        "quick changes to the playing surface), and a beautiful scratch-resistant laminate racetrack " +
+                        "with ten 3-inch stainless steel cup holders. " +
+                        "The Ultimate offers a choice of two playing surfaces -- poker felt or water-resistant suited " +
+                        "speed cloth (a smooth polyester weave fabric that provides faster card slides). The table " +
+                        "measures 92 x 44 x 30 inches (LxWxH). " +
+                        "BBO Poker Tables manufactures stylish, high quality poker tables and game night tables for " +
+                        "players who demand a premium showpiece at an affordable price. All tables are upholstered in " +
+                        "California. In 2015, BBO Poker Tables was named the official poker table supplier of the " +
+                        "World Poker Tour.",
+                "Compact enough to fit into your SUV, the easily portable Ultimate poker table from BBO Poker " +
+                        "seats up to 10 and folds down for easy storage.",
+                new String[]{
+                        "https://images-na.ssl-images-amazon.com/images/I/6138QQQl7CL._SL1250_.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/I/710bmO7eQBL._SL1250_.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/I/615rv4coe-L._SL1250_.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/I/61UEZt-pgxL._SL1250_.jpg"
+                },
+                755.00
+        ));
+        inv.add(new Product(
+                4,
+                "Brybelly Clear Acrylic Chip Rack - Holds 100 Chips",
+                "Acrylic chip trays hold 100 poker chips each. Twenty chips in a row, five rows per tray. " +
+                        "For home or professional use.",
+                "Acrylic chip trays hold 100 poker chips each.",
+                new String[] {
+                        "https://images-na.ssl-images-amazon.com/images/I/51QflRnsFeL._SL1000_.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/I/61202dbDtEL._SL1000_.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/I/615wBBfTquL._SL1000_.jpg"
+                },
+                6.99
+        ));
+        inv.add(new Product(
+                5,
+                "Brybelly Acrylic Poker Chip Carrier (1000-Count) with Chip Trays",
+                "If you want to bring the casino feel to your next home game, this 1,000 count acrylic poker " +
+                        "chip carrier is the perfect solution. This case holds 1,000 poker chips " +
+                        "(CHIPS ARE NOT INCLUDED). Each carrier is constructed of durable acrylic with reinforced " +
+                        "corners. The top opens easily and a secure handle makes it convenient to transport your " +
+                        "chips from place to place. The carrier measures approximately 10-Inch L x 8-Inch W x 13-Inch H. " +
+                        "This is the same type of carrier that you would see in a casino when a security guard delivers " +
+                        "large quantities of chips to a gaming table. Ten stackable acrylic chip trays are also " +
+                        "included. Each chip tray holds 100 chips (Chips Not Included). This acrylic carrier is great " +
+                        "for storing your poker chips when they aren't in use, and it also serves as a great way to " +
+                        "showcase your important chips. Heavy-duty and made to last, this 1,000 count acrylic carrier " +
+                        "with 10 acrylic chip trays makes a great gift idea for any avid poker enthusiast.",
+                "If you want to bring the casino feel to your next home game, this 1,000 count acrylic poker " +
+                        "chip carrier is the perfect solution.",
+                new String[] {
+                        "https://images-na.ssl-images-amazon.com/images/I/711cp18DHpL._SL1500_.jpg",
+                        "https://images-na.ssl-images-amazon.com/images/I/71%2BM8V5usJL._SL1455_.jpg"
+                },
+                64.99
+        ));
     }
 
     public static ArrayList<Product> getInventory() {
