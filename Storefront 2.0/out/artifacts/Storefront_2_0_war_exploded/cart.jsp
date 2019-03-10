@@ -13,4 +13,5 @@
         </thead>
         <tbody id="cartList"></tbody>
     </table>
+    <button class="btn btn-success" id="checkout"><span class="fa fa-dollar-sign"></span> Checkout</button>
 </div>

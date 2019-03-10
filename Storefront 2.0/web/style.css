@@ -60,6 +60,11 @@ ul.carousel-indicators li {
     color: #e74c3c;
 }
 
+#checkout {
+    display: block;
+    margin-left: auto;
+}
+
 #empty {
     display: none;
 }
