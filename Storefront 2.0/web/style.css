@@ -52,6 +52,15 @@ ul.carousel-indicators li {
     margin-bottom: 0;
 }
 
+.right-align {
+    text-align: right;
+}
+
+.tax {
+    display: block;
+    text-align: right;
+}
+
 .quickAdd {
     display: inline;
 }

@@ -15,7 +15,9 @@ public class CartBuilder {
                     if(("" + p.getId()).equals(id)){
                         //Add the id and count to json string
                         json += json.length() > 10 ? "," : "";
-                        json += "{\"id\": " + id + ", \"name\": \"" + p.getName() + "\", \"qty\": " + c.getValue() + "}";
+                        json += "{\"id\": " + id + ", \"name\": \"" + p.getName() +
+                                "\", \"qty\": " + c.getValue() +
+                                ", \"price\": " + p.getPrice() + "}";
                     }
                 }
             }
