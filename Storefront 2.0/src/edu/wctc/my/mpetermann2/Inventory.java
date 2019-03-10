@@ -10,7 +10,7 @@ public class Inventory {
 
         inv.add(new Product(
                 0,
-                "Nevada Jack Casino Grade Ceramic 10-gram Poker Chip – Pack of 50",
+                "Nevada Jack Casino Grade Ceramic 10-gram Poker Chip Pack of 50",
                 "These premium poker chips are made with casino grade ceramic—the same ceramic Casinos " +
                         "prefer! Those looking for an authentic experience should look no further. Available in 9 " +
                         "colorful denominations ranging from $0.25 to $5,000, all artwork is printed directly on the " +

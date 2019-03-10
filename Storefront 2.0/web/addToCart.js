@@ -20,9 +20,7 @@ $(function() {
         cartSpan.text(parseInt(cartSpan.text()) + parseInt(qty));
         animateCart();
 
-        $.get("AddToCart", {productId: id, quantity: qty}).done(function(response){
-
-        });
+        $.get("AddToCart", {productId: id, quantity: qty});
     };
 
     //Animate the cart icon

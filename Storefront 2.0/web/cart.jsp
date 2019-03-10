@@ -1,28 +1,16 @@
+<script><%@include file="./getCart.js"%></script>
 <div class="jumbotron">
     <h1 class="display-1">Shopping Cart</h1>
 </div>
 <div class="container">
-    <h4>Your cart is currently empty.</h4>
-    <table class="table table-striped table-bordered table-hover">
+    <h4 id="empty">Your cart is currently empty.</h4>
+    <table class="table table-striped table-bordered table-hover" id="cartTable">
         <thead>
-            <th></th>
-            <th>Product Name</th>
-            <th>Quantity</th>
-            <th>Remove</th>
+            <th style="width: 5%"></th>
+            <th style="width: 75%">Product Name</th>
+            <th style="width: 10%" class="center-text">Quantity</th>
+            <th style="width: 10%" class="center-text">Remove</th>
         </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Some Item</td>
-                <td>3</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Another Item</td>
-                <td>6</td>
-                <td>X</td>
-            </tr>
-        </tbody>
+        <tbody id="cartList"></tbody>
     </table>
 </div>
