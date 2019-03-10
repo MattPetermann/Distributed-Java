@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <style><%@include file="./style.css"%></style>
   <style><%@include file="./animate.css"%></style>
+  <script><%@include file="./cartAnimations.js"%></script>
   <title>Storefront</title>
 </head>
 <body>
@@ -26,7 +27,9 @@
     </ul>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="cart" id="cartLink"><span class="fa fa-shopping-cart"></span> Cart (<span id="cartCount">0</span>)</a>
+        <a class="nav-link" href="cart" id="cartLink">
+          <span class="fa fa-shopping-cart"></span> Cart (<span id="cartCount"></span>)
+        </a>
       </li>
     </ul>
   </div>
@@ -47,3 +50,5 @@
 <% } %>
 </body>
 </html>
+
+<script>animateCart(false)</script>

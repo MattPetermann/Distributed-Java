@@ -7,11 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaf0cae9-8aa7-489a-b187-8a982a07c85a" name="Default Changelist" comment="Hide carousel controls and indicators if item has only one image">
-      <change beforePath="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/GetCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/GetCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/addToCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/addToCart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/getCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/getCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/editCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/editCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/products.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +82,8 @@
         <counts>
           <entry key="css" value="1106" />
           <entry key="java" value="3717" />
-          <entry key="js" value="4455" />
-          <entry key="jsp" value="4572" />
+          <entry key="js" value="4683" />
+          <entry key="jsp" value="4614" />
           <entry key="txt" value="80" />
           <entry key="xml" value="506" />
         </counts>
@@ -92,8 +92,8 @@
         <counts>
           <entry key="CSS" value="1106" />
           <entry key="JAVA" value="3717" />
-          <entry key="JSP" value="4572" />
-          <entry key="JavaScript" value="4455" />
+          <entry key="JSP" value="4614" />
+          <entry key="JavaScript" value="4683" />
           <entry key="PLAIN_TEXT" value="80" />
           <entry key="XML" value="506" />
         </counts>
@@ -102,8 +102,8 @@
         <counts>
           <entry key="css" value="13" />
           <entry key="java" value="18" />
-          <entry key="js" value="13" />
-          <entry key="jsp" value="22" />
+          <entry key="js" value="17" />
+          <entry key="jsp" value="25" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
@@ -111,8 +111,8 @@
         <counts>
           <entry key="CSS" value="13" />
           <entry key="JAVA" value="18" />
-          <entry key="JSP" value="22" />
-          <entry key="JavaScript" value="13" />
+          <entry key="JSP" value="25" />
+          <entry key="JavaScript" value="17" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -120,20 +120,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/addToCart.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+            <state relative-caret-position="1378">
+              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/getCart.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/cartAnimations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="260">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -144,8 +144,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -169,20 +169,21 @@
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/AddToCartServlet.java" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/CartHandler.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/animate.css" />
-        <option value="$PROJECT_DIR$/web/products.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/AddToCart.java" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/Inventory.java" />
         <option value="$PROJECT_DIR$/web/style.css" />
-        <option value="$PROJECT_DIR$/web/cart.jsp" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/EditCart.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/editCart.js" />
         <option value="$PROJECT_DIR$/web/getCart.js" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/CartBuilder.java" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/DeleteFromCart.java" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/GetCart.java" />
+        <option value="$PROJECT_DIR$/web/editCart.js" />
         <option value="$PROJECT_DIR$/web/addToCart.js" />
+        <option value="$PROJECT_DIR$/web/products.jsp" />
+        <option value="$PROJECT_DIR$/web/cart.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/cartAnimations.js" />
       </list>
     </option>
   </component>
@@ -437,7 +438,7 @@
       <workItem from="1552008526076" duration="2754000" />
       <workItem from="1552014174254" duration="6316000" />
       <workItem from="1552162695545" duration="18525000" />
-      <workItem from="1552191105055" duration="5447000" />
+      <workItem from="1552191105055" duration="7041000" />
     </task>
     <task id="LOCAL-00001" summary="Hide carousel controls and indicators if item has only one image">
       <created>1551944143488</created>
@@ -450,7 +451,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83611000" />
+    <option name="totallyTimeSpent" value="85205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -549,13 +550,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/CartHandler.java" />
-    <entry file="file://$PROJECT_DIR$/web/products.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -577,13 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -618,20 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/editCart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/GetCart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -642,17 +615,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/getCart.js">
+    <entry file="file://$PROJECT_DIR$/web/cart.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="37" />
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/addToCart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="442">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/products.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/editCart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/getCart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1378">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cartAnimations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
         </state>
       </provider>
     </entry>

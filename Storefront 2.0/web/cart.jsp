@@ -1,3 +1,4 @@
+<script><%@include file="./cartAnimations.js"%></script>
 <script><%@include file="./getCart.js"%></script>
 <script><%@include file="./editCart.js"%></script>
 <div class="jumbotron">

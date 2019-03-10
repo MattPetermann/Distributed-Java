@@ -3,6 +3,7 @@
 <%@ page import="edu.wctc.my.mpetermann2.Product" %>
 
 <!--Search and cart operations-->
+<script><%@include file="./cartAnimations.js"%></script>
 <script><%@include file="./search.js"%></script>
 <script><%@include file="./addToCart.js"%></script>
 
