@@ -92,7 +92,7 @@
                 <img class="card-img-top" src="<%=p.getImageUrls()[0]%>"/>
                 <div class="card-body">
                     <h4 class="card-title"><%=p.getName()%> <small>$<%=f.format(p.getPrice())%></small></h4>
-                    <p class="card-text"><%=p.getSummary()%></p>
+                    <p class="card-text"><%=p.getDescription().substring(0, p.getDescription().indexOf('.') + 1)%></p>
                 </div>
                 <div class="card-footer">
                     <!--Bind each card to its respective modal-->

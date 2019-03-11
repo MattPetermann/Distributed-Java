@@ -16,7 +16,6 @@ public class Inventory {
                         "colorful denominations ranging from $0.25 to $5,000, all artwork is printed directly on the " +
                         "chip using a dye-sublimation process and incorporates Old West style with clear, easy-to-read " +
                         "denominations. The ceramic’s grippy texture makes stacking these chips a breeze.",
-                "These premium poker chips are made with casino grade ceramic.",
                 new String[]{
                         "https://images-na.ssl-images-amazon.com/images/I/51enCt3eMNL.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/511bu6pblNL.jpg",
@@ -30,7 +29,6 @@ public class Inventory {
                         "The Bicycle Prestige cards offers unmatched durability and is the only 100-Percent " +
                         "plastic card to offer a paper-like feel. Perfect for a neighborhood game or a " +
                         "professional tournament.",
-                "Many professionals prefer the flexibility and durability of plastic cards.",
                 new String[]{
                         "https://images-na.ssl-images-amazon.com/images/I/61zU1WnhG-L._SL1001_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/71O-y0ISc-L._SL1000_.jpg"
@@ -42,8 +40,6 @@ public class Inventory {
                 "The button is double sided with one side off white and one side black and the word Dealer " +
                         "carved on both sides. Made of heavy duty acrylic with rubber bumper. Item height is 3/4 inch. " +
                         "Use in your Texas Holdem poker games.",
-                "The button is double sided with one side off white and one side black and the word Dealer " +
-                        "carved on both sides.",
                 new String[]{
                         "https://images-na.ssl-images-amazon.com/images/I/41qmKpo1tdL.jpg"
                 },
@@ -64,8 +60,6 @@ public class Inventory {
                         "players who demand a premium showpiece at an affordable price. All tables are upholstered in " +
                         "California. In 2015, BBO Poker Tables was named the official poker table supplier of the " +
                         "World Poker Tour.",
-                "Compact enough to fit into your SUV, the easily portable Ultimate poker table from BBO Poker " +
-                        "seats up to 10 and folds down for easy storage.",
                 new String[]{
                         "https://images-na.ssl-images-amazon.com/images/I/6138QQQl7CL._SL1250_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/710bmO7eQBL._SL1250_.jpg",
@@ -79,7 +73,6 @@ public class Inventory {
                 "Brybelly Clear Acrylic Chip Rack - Holds 100 Chips",
                 "Acrylic chip trays hold 100 poker chips each. Twenty chips in a row, five rows per tray. " +
                         "For home or professional use.",
-                "Acrylic chip trays hold 100 poker chips each.",
                 new String[] {
                         "https://images-na.ssl-images-amazon.com/images/I/51QflRnsFeL._SL1000_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/61202dbDtEL._SL1000_.jpg",
@@ -101,8 +94,6 @@ public class Inventory {
                         "for storing your poker chips when they aren't in use, and it also serves as a great way to " +
                         "showcase your important chips. Heavy-duty and made to last, this 1,000 count acrylic carrier " +
                         "with 10 acrylic chip trays makes a great gift idea for any avid poker enthusiast.",
-                "If you want to bring the casino feel to your next home game, this 1,000 count acrylic poker " +
-                        "chip carrier is the perfect solution.",
                 new String[] {
                         "https://images-na.ssl-images-amazon.com/images/I/711cp18DHpL._SL1500_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/71%2BM8V5usJL._SL1455_.jpg"
