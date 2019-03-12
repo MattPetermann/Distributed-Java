@@ -51,9 +51,14 @@ $(function() {
                                 '<small class="tax">(+Tax & Shipping)</small>' +
                             '</div>' +
                             '<div class="modal-footer">' +
-                                '<button class="btn btn-primary">' +
-                                    '<span class="fa fa-credit-card"></span> Proceed to Payment' +
-                                '</button>' +
+                                '<div class="btn-group">' +
+                                    '<button class="btn btn-primary">' +
+                                        '<span class="fa fa-credit-card"></span> Proceed to Payment' +
+                                    '</button>' +
+                                    '<button class="btn btn-danger" data-dismiss="modal">' +
+                                        'Cancel' +
+                                    '</button>' +
+                                '</div>' +
                             '</div>' +
                         '</div>' +
                     '</div>' +
