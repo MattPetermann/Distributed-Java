@@ -80,7 +80,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1295" />
+          <entry key="css" value="1449" />
           <entry key="java" value="4342" />
           <entry key="js" value="7203" />
           <entry key="jsp" value="4967" />
@@ -90,7 +90,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1295" />
+          <entry key="CSS" value="1449" />
           <entry key="HTML" value="5" />
           <entry key="JAVA" value="4342" />
           <entry key="JSP" value="4967" />
@@ -133,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+            <state relative-caret-position="260">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -475,7 +475,7 @@
       <workItem from="1552332890189" duration="635000" />
       <workItem from="1552335589170" duration="2338000" />
       <workItem from="1552359689232" duration="556000" />
-      <workItem from="1552506960430" duration="192000" />
+      <workItem from="1552506960430" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="Hide carousel controls and indicators if item has only one image">
       <created>1551944143488</created>
@@ -488,7 +488,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101438000" />
+    <option name="totallyTimeSpent" value="103434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -704,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+        <state relative-caret-position="260">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
