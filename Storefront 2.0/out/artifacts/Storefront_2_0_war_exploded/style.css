@@ -88,7 +88,7 @@ ul.carousel-indicators li {
     width: 80%;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
     .product-card {
         height: 50%;
     }
