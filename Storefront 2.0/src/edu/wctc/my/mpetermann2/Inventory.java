@@ -1,11 +1,12 @@
 package edu.wctc.my.mpetermann2;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Inventory {
+    //Stores the inventory
     private static ArrayList<Product> inv = null;
 
+    //Instantiate the inventory
     private Inventory() {
         inv = new ArrayList<>();
 
@@ -111,16 +112,22 @@ public class Inventory {
         ));
     }
 
+    //Singleton inventory
     public static ArrayList<Product> getInventory() {
+        //If the inventory is not generated, generate it
         if(inv == null)
             new Inventory();
 
+        //Return the current inventory
         return inv;
     }
 
+    //Return a list of categories
     public static ArrayList<String> getCategories() {
+        //Empty Array List
         ArrayList<String> categories = new ArrayList<>();
 
+        //If this category is not already saved, save it
         for(Product p : getInventory()) {
             boolean exists = false;
             for(String cat : categories) {
@@ -130,6 +137,21 @@ public class Inventory {
             if(!exists) categories.add(p.getCategory());
         }
 
+        //Return the list of categories
         return categories;
+    }
+
+    //Count the number of items of specified category
+    public static int countItemsInCategory(String category) {
+        //Begin count
+        int count = 0;
+
+        //Check all items in the inventory
+        for(Product p : getInventory())
+            if(p.getCategory().equals(category))
+                count++;
+
+        //Return number of items
+        return count;
     }
 }

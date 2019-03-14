@@ -1,8 +1,8 @@
 $(function() {
     //Update filter icon
-    $('#filters').on('shown.bs.collapse', function(){
+    $('#show-filters').on('shown.bs.popover', function(){
         $('#filterArrow').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
-    }).on('hidden.bs.collapse', function(){
+    }).on('hidden.bs.popover', function(){
         $('#filterArrow').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
     });
 
@@ -15,27 +15,47 @@ $(function() {
     });
 
     //Update filter checkboxes
-    $('.filter').on('change', function(){
+    $(document).on('change', '.filter', function(){
+        //Update template
+        if($(this).prop('checked')) {
+            $($(this).data('control')).attr('checked', true);
+            $($(this).data('control')).prop('checked', true);
+        }
+        else {
+            $($(this).data('control')).removeAttr('checked');
+            $($(this).data('control')).prop('checked', false);
+        }
+
         //If this is not the check all button
         if($(this).data('show') !== 'All') {
-            //Count how many are not checked
+            //Count how many items are not checked
             var count = 0;
             $('.filter').each(function () {
                 if($(this).data('show') !== 'All' && !($(this).prop('checked')))
                     count++;
             });
 
-            //If all are checked, check the all box, else do not check it
-            $('#show-all').prop('checked', count === 0);
+            //If none are unchecked, check the all box, else do not check it
+            //Also modify the template element
+            if(count === 0) {
+                $('.popover-body').find('#show-all').attr('checked', true).prop('checked', true);
+                $('#show-all').attr('checked', true).prop('checked', true);
+            }
+            else {
+                $('.popover-body').find('#show-all').removeAttr('checked').prop('checked', false);
+                $('#show-all').removeAttr('checked').prop('checked', false);
+            }
         }
         //If this is the check all button
         else {
             //If this is checked, check all
-            if($(this).prop('checked'))
-                $('.filter').prop('checked', true);
+            if($(this).prop('checked')) {
+                $('.filter').attr('checked', true).prop('checked', true);
+            }
             //If this is unchecked, uncheck all
-            else
-                $('.filter').prop('checked', false);
+            else {
+                $('.filter').removeAttr('checked').prop('checked', false);
+            }
         }
 
         search();
@@ -66,7 +86,7 @@ var fitsFilters = function(item) {
     var applies = false;
 
     //Loop over filters
-    $('.filter').each(function() {
+    $('.popover-body').find('.filter').each(function() {
         //If this filter is selected and matches the category of the item
         if($(this).prop('checked') && ($(this).data('show') === item.data('category'))) {
             applies = true;

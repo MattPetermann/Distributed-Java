@@ -7,6 +7,7 @@
 <script><%@include file="./cartAnimations.js"%></script>
 <script><%@include file="./search.js"%></script>
 <script><%@include file="./addToCart.js"%></script>
+<script><%@include file="./popover.js"%></script>
 
 <!--Decimal format for prices-->
 <% DecimalFormat f = new DecimalFormat("#.00"); %>
@@ -21,7 +22,11 @@
     <div class="input-group mb-3">
         <input type="text" class="form-control form-control-lg" id="searchField" placeholder="Search">
         <div class="input-group-append">
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filters">
+            <button class="btn btn-primary"
+                    id="show-filters"
+                    type="button"
+                    data-toggle="popover"
+                    data-placement="bottom">
                 <span class="fa fa-angle-double-down" id="filterArrow"></span> Filter
             </button>
         </div>
@@ -32,17 +37,24 @@
 </form>
 
 <!--Filter-->
-<div id="filters" class="collapse mb-2">
+<div id="filters">
     <div id="filters-body">
         <div class="form-check ml-auto mr-auto filter-div">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input filter" id="show-all" data-show="All" checked>All
+                <input type="checkbox" class="form-check-input filter" id="show-all" data-show="All" checked>
+                All (<%=Inventory.getInventory().size()%>)
             </label>
         </div>
         <%for(String cat : Inventory.getCategories()) {%>
         <div class="form-check ml-auto mr-auto filter-div">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input filter" data-show=<%=cat%> checked><%=cat%>
+                <input type="checkbox"
+                       class="form-check-input filter"
+                       id="<%=cat%>"
+                       data-show="<%=cat%>"
+                       data-control="#<%=cat%>"
+                       checked>
+                <%=cat%> (<%=Inventory.countItemsInCategory(cat)%>)
             </label>
         </div>
         <% } %>
