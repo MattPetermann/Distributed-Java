@@ -36,13 +36,13 @@
     <div id="filters-body">
         <div class="form-check ml-auto mr-auto filter-div">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input filter" data-show="All" checked>All
+                <input type="checkbox" class="form-check-input filter" id="show-all" data-show="All" checked>All
             </label>
         </div>
         <%for(String cat : Inventory.getCategories()) {%>
         <div class="form-check ml-auto mr-auto filter-div">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input filter" data-show=<%=cat%>><%=cat%>
+                <input type="checkbox" class="form-check-input filter" data-show=<%=cat%> checked><%=cat%>
             </label>
         </div>
         <% } %>
@@ -111,8 +111,7 @@
 
         <!--Display a card for each product-->
         <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-2 product-column">
-            <div class="card product-card"
-                 data-title="<%=p.getName()%>">
+            <div class="card product-card" data-title="<%=p.getName()%>" data-category=<%=p.getCategory()%>>
                 <img class="card-img-top" src="<%=p.getImageUrls()[0]%>"/>
                 <div class="card-body">
                     <h4 class="card-title"><%=p.getName()%> <small>$<%=f.format(p.getPrice())%></small></h4>
