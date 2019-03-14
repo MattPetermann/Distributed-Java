@@ -40,16 +40,39 @@ $(function() {
 
         search();
     });
-
-    //Hide all products then show relevant results
-    var search = function(e) {
-        if(e !== undefined) e.preventDefault();
-
-        $('.product-card').each( function() {
-            $(this).parent().hide();
-            if($(this).data('title').toUpperCase().indexOf($('#searchField').val().toUpperCase()) !== -1){
-                $(this).parent().show();
-            }
-        });
-    }
 });
+
+//Search for products based on term and filters
+var search = function(e) {
+    if(e !== undefined) e.preventDefault();
+
+    //Loop over all product cards
+    $('.product-card').each( function() {
+        //Hide all
+        $(this).parent().hide();
+
+        //If this card matches the search term and filters
+        if($(this).data('title').toUpperCase().indexOf($('#searchField').val().toUpperCase()) !== -1 &&
+            fitsFilters($(this))){
+            //Show this item
+            $(this).parent().show();
+        }
+    });
+};
+
+//Check if the searched item matches filters
+var fitsFilters = function(item) {
+    //Track if this item fits the filters
+    var applies = false;
+
+    //Loop over filters
+    $('.filter').each(function() {
+        //If this filter is selected and matches the category of the item
+        if($(this).prop('checked') && ($(this).data('show') === item.data('category'))) {
+            applies = true;
+        }
+    });
+
+    //Return whether this item fits the filters
+    return applies;
+};
