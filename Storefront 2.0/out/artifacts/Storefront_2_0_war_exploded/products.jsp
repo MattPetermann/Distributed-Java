@@ -26,6 +26,23 @@
     </div>
 </form>
 
+<!--Filter-->
+<div id="filters" class="mb-2">
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" checked>All
+        </label>
+    </div>
+    <%for(String cat : Inventory.getCategories()) {%>
+    <div class="form-check-inline">
+        <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value=""><%=cat%>
+        </label>
+    </div>
+    <% } %>
+</div>
+
+<!--Products-->
 <div id="products" class="row mb-3">
     <!--Loop through all products in the iventory-->
     <% for(Product p : Inventory.getInventory()) { %>

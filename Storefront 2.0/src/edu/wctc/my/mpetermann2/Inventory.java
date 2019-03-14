@@ -1,5 +1,6 @@
 package edu.wctc.my.mpetermann2;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -21,7 +22,9 @@ public class Inventory {
                         "https://images-na.ssl-images-amazon.com/images/I/511bu6pblNL.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/51McGAZBK1L.jpg"
                 },
-                39.99));
+                39.99,
+                "Chips"
+        ));
         inv.add(new Product(
                 1,
                 "Bicycle Prestige Dura-Flex Playing Cards",
@@ -33,7 +36,8 @@ public class Inventory {
                         "https://images-na.ssl-images-amazon.com/images/I/61zU1WnhG-L._SL1001_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/71O-y0ISc-L._SL1000_.jpg"
                 },
-                8.97));
+                8.97,
+                "Cards"));
         inv.add(new Product(
                 2,
                 "Da Vinci Large 3 Inch Double Sided Casino Grade Pro Dealer Button Puck",
@@ -43,7 +47,9 @@ public class Inventory {
                 new String[]{
                         "https://images-na.ssl-images-amazon.com/images/I/41qmKpo1tdL.jpg"
                 },
-                8.99));
+                8.99,
+                "Accessories"
+        ));
         inv.add(new Product(
                 3,
                 "BBO Poker Ultimate Folding Poker Table for 10 Players with Felt Playing Surface, " +
@@ -66,7 +72,8 @@ public class Inventory {
                         "https://images-na.ssl-images-amazon.com/images/I/615rv4coe-L._SL1250_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/61UEZt-pgxL._SL1250_.jpg"
                 },
-                755.00
+                755.00,
+                "Tables"
         ));
         inv.add(new Product(
                 4,
@@ -78,7 +85,8 @@ public class Inventory {
                         "https://images-na.ssl-images-amazon.com/images/I/61202dbDtEL._SL1000_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/615wBBfTquL._SL1000_.jpg"
                 },
-                6.99
+                6.99,
+                "Storage"
         ));
         inv.add(new Product(
                 5,
@@ -98,7 +106,8 @@ public class Inventory {
                         "https://images-na.ssl-images-amazon.com/images/I/711cp18DHpL._SL1500_.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/71%2BM8V5usJL._SL1455_.jpg"
                 },
-                64.99
+                64.99,
+                "Storage"
         ));
     }
 
@@ -107,5 +116,20 @@ public class Inventory {
             new Inventory();
 
         return inv;
+    }
+
+    public static ArrayList<String> getCategories() {
+        ArrayList<String> categories = new ArrayList<>();
+
+        for(Product p : getInventory()) {
+            boolean exists = false;
+            for(String cat : categories) {
+                if(cat.equals(p.getCategory()))
+                    exists = true;
+            }
+            if(!exists) categories.add(p.getCategory());
+        }
+
+        return categories;
     }
 }

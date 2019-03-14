@@ -6,13 +6,15 @@ public class Product {
     private String description;
     private String[] imageUrls;
     private double price;
+    private String category;
 
-    public Product(int id, String name, String description, String[] urls, double price){
+    public Product(int id, String name, String description, String[] urls, double price, String category){
         this.id = id;
         this.name = name;
         this.description = description;
         this.imageUrls = urls;
         this.price = price;
+        this.category = category;
     }
 
     public int getId() {
@@ -25,6 +27,10 @@ public class Product {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getCategory() {
+        return category;
     }
 
     public String[] getImageUrls() {

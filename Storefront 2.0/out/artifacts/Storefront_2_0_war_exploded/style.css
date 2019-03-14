@@ -88,6 +88,11 @@ ul.carousel-indicators li {
     display: none;
 }
 
+#filters {
+    display: table;
+    margin: auto;
+}
+
 #products {
     overflow: hidden;
 }
