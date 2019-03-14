@@ -1,4 +1,12 @@
 $(function() {
+    //Update filter icon
+    $('#filters').on('shown.bs.collapse', function(){
+        $('#filterArrow').removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
+    });
+    $('#filters').on('hidden.bs.collapse', function(){
+        $('#filterArrow').removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
+    });
+
     //Trigger on form submit or field change
     $('#search').on('submit', function(e){
         search(e);

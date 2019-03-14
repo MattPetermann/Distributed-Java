@@ -49,6 +49,10 @@ ul.carousel-indicators li {
     width: 50%;
 }
 
+.filter-div {
+    padding: 1%;
+}
+
 .fixed-top {
     box-shadow: gray 0 5px 20px 0;
 }
@@ -88,7 +92,7 @@ ul.carousel-indicators li {
     display: none;
 }
 
-#filters {
+#filters-body {
     display: table;
     margin: auto;
 }

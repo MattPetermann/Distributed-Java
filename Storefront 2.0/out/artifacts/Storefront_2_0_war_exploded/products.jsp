@@ -21,25 +21,32 @@
     <div class="input-group mb-3">
         <input type="text" class="form-control form-control-lg" id="searchField" placeholder="Search">
         <div class="input-group-append">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filters">
+                <span class="fa fa-angle-double-down" id="filterArrow"></span> Filter
+            </button>
+        </div>
+        <div class="input-group-append">
             <button class="btn btn-success"><span class="fa fa-search"></span> Search</button>
         </div>
     </div>
 </form>
 
 <!--Filter-->
-<div id="filters" class="mb-2">
-    <div class="form-check-inline">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" checked>All
-        </label>
+<div id="filters" class="collapse mb-2">
+    <div id="filters-body">
+        <div class="form-check ml-auto mr-auto filter-div">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input filter" data-show="All" checked>All
+            </label>
+        </div>
+        <%for(String cat : Inventory.getCategories()) {%>
+        <div class="form-check ml-auto mr-auto filter-div">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input filter" data-show=<%=cat%>><%=cat%>
+            </label>
+        </div>
+        <% } %>
     </div>
-    <%for(String cat : Inventory.getCategories()) {%>
-    <div class="form-check-inline">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" value=""><%=cat%>
-        </label>
-    </div>
-    <% } %>
 </div>
 
 <!--Products-->
