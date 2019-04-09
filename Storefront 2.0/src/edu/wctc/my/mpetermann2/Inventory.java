@@ -1,13 +1,24 @@
 package edu.wctc.my.mpetermann2;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Inventory {
     //Stores the inventory
     private static ArrayList<Product> inv = null;
 
+    //Track if DB is instantiated
+    private static boolean _dbExists = false;
+
     //Instantiate the inventory
     private Inventory() {
+        if(!_dbExists) {
+            createDatabase();
+            addContent();
+        }
+
         inv = new ArrayList<>();
 
         inv.add(new Product(
@@ -110,6 +121,106 @@ public class Inventory {
                 64.99,
                 "Storage"
         ));
+    }
+
+    //Instantiate the database
+    public static void createDatabase() {
+        try {
+            //Create a connection
+            Connection conn = DriverManager.getConnection("jdbc:derby:CoffeeDB;create=true");
+
+            //Drop existing tables
+            dropTables(conn);
+
+            //Add tables
+            buildProductTable(conn);
+            buildImageTable(conn);
+            conn.close();
+        } catch (Exception e){}
+    }
+
+    //Drop any existing tables in the database
+    public static void dropTables(Connection conn) {
+        try {
+            Statement stmt = conn.createStatement();
+
+            stmt.execute(
+                    "DROP TABLE Product"
+            );
+        }catch (Exception e){}
+        try {
+            Statement stmt = conn.createStatement();
+
+            stmt.execute(
+                    "DROP TABLE Image"
+            );
+        }catch (Exception e){}
+    }
+
+    //Instantiate the product table
+    public static void buildProductTable(Connection conn) {
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(
+                    "CREATE TABLE Product(" +
+                            "ProductId INT NOT NULL PRIMARY KEY, " +
+                            "ProductName VARCHAR(MAX), " +
+                            "Description VARCHAR(MAX), " +
+                            "Price DOUBLE, " +
+                            "Category VARCHAR(MAX)" +
+                            ")"
+            );
+        } catch(Exception e){}
+    }
+
+    //Instantiate the images table
+    public static void buildImageTable(Connection conn) {
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(
+                    "CREATE TABLE Image(" +
+                            "URL VARCHAR(MAX), " +
+                            "ProductId INT" +
+                            ")"
+            );
+        } catch(Exception e){}
+    }
+
+    //Add rows to the database
+    public static void addContent() {
+        try {
+            //Create a connection
+            Connection conn = DriverManager.getConnection("jdbc:derby:CoffeeDB;create=true");
+
+            //Add rows
+            addProducts(conn);
+            addImages(conn);
+            conn.close();
+        } catch (Exception e){}
+    }
+
+    //Add rows to the product table
+    public static void addProducts(Connection conn) {
+        try {
+            Statement stmt = conn.createStatement();
+
+            //Add each product
+            stmt.execute(
+                    ""
+            );
+        } catch(Exception e){}
+    }
+
+    //Add rows to the image table
+    public static void addImages(Connection conn) {
+        try {
+            Statement stmt = conn.createStatement();
+
+            //Add each image
+            stmt.execute(
+                    ""
+            );
+        } catch(Exception e){}
     }
 
     //Singleton inventory
