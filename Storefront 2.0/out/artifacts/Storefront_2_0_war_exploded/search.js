@@ -86,7 +86,7 @@ var fitsFilters = function(item) {
     var applies = false;
 
     //Loop over filters
-    $('.popover-body').find('.filter').each(function() {
+    $('.filter').each(function() {
         //If this filter is selected and matches the category of the item
         if($(this).prop('checked') && ($(this).data('show') === item.data('category'))) {
             applies = true;
