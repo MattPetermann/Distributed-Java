@@ -8,6 +8,33 @@
   <component name="ChangeListManager">
     <list default="true" id="eaf0cae9-8aa7-489a-b187-8a982a07c85a" name="Default Changelist" comment="Hide carousel controls and indicators if item has only one image">
       <change beforePath="$PROJECT_DIR$/../DBSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cab0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cab0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cac1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cac1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cae1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cae1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cb1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/CoffeeDB/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBSample/out/production/DBSample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DBSample/out/production/DBSample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Storefront_2_0_war_exploded/WEB-INF/classes/edu/wctc/my/mpetermann2/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Storefront_2_0_war_exploded/WEB-INF/classes/edu/wctc/my/mpetermann2/Inventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Storefront 2.0/edu/wctc/my/mpetermann2/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Storefront 2.0/edu/wctc/my/mpetermann2/Inventory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/Inventory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,6 +43,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1566600703">
@@ -63,7 +104,8 @@
     <session id="1387988785">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
@@ -76,17 +118,19 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1664" />
-          <entry key="java" value="6828" />
+          <entry key="java" value="8220" />
           <entry key="js" value="9861" />
           <entry key="jsp" value="6009" />
+          <entry key="sql" value="24" />
           <entry key="txt" value="80" />
           <entry key="xml" value="519" />
         </counts>
@@ -95,11 +139,12 @@
         <counts>
           <entry key="CSS" value="1664" />
           <entry key="HTML" value="5" />
-          <entry key="JAVA" value="6819" />
+          <entry key="JAVA" value="8205" />
           <entry key="JSP" value="6009" />
           <entry key="JavaScript" value="9856" />
           <entry key="PLAIN_TEXT" value="80" />
-          <entry key="SQL" value="9" />
+          <entry key="SQL" value="15" />
+          <entry key="Scratch" value="24" />
           <entry key="XML" value="519" />
         </counts>
       </usages-collector>
@@ -109,6 +154,7 @@
           <entry key="java" value="37" />
           <entry key="js" value="39" />
           <entry key="jsp" value="35" />
+          <entry key="sql" value="3" />
           <entry key="xml" value="15" />
         </counts>
       </usages-collector>
@@ -118,6 +164,7 @@
           <entry key="JAVA" value="37" />
           <entry key="JSP" value="35" />
           <entry key="JavaScript" value="39" />
+          <entry key="Scratch" value="3" />
           <entry key="XML" value="15" />
         </counts>
       </usages-collector>
@@ -128,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../DBSample/src/CreateCoffeeDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1328">
-              <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
             </state>
           </provider>
         </entry>
@@ -137,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../DBSample/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -146,8 +193,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/Inventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="213" column="33" lean-forward="true" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
+            <state relative-caret-position="204">
+              <caret line="171" column="52" lean-forward="true" selection-start-line="171" selection-start-column="52" selection-end-line="171" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,6 +249,7 @@
         <option value="$PROJECT_DIR$/web/style.css" />
         <option value="$PROJECT_DIR$/web/products.jsp" />
         <option value="$PROJECT_DIR$/web/search.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4c66324b-b3d1-4b77-a329-9f19146c9c68/console.sql" />
         <option value="$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/Inventory.java" />
       </list>
     </option>
@@ -220,10 +268,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="355" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="-91" />
+    <option name="y" value="-23" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -234,6 +282,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,15 +318,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="derby" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551930095043" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554861189373" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -466,6 +516,11 @@
       <workItem from="1552518736044" duration="2518000" />
       <workItem from="1552530924363" duration="11138000" />
       <workItem from="1554839980100" duration="2750000" />
+      <workItem from="1554854069458" duration="2762000" />
+      <workItem from="1554857472040" duration="198000" />
+      <workItem from="1554857786213" duration="257000" />
+      <workItem from="1554858341553" duration="1367000" />
+      <workItem from="1554859836514" duration="1403000" />
     </task>
     <task id="LOCAL-00001" summary="Hide carousel controls and indicators if item has only one image">
       <created>1551944143488</created>
@@ -478,13 +533,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119912000" />
+    <option name="totallyTimeSpent" value="125899000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6878049" visible="true" weight="0.14072494" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6878049" visible="true" weight="0.15204236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -494,25 +549,26 @@
       <window_info id="Web" order="7" sideWeight="0.31219512" side_tool="true" weight="0.1376702" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.24186552" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.38032788" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.18835099" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -577,9 +633,6 @@
     <entry file="file://$PROJECT_DIR$/../Demos/SimpleServlet/src/edu/wctc/simple/SimpleServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/productBuilder.js" />
     <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/ProductServlet.java" />
-    <entry file="file://$PROJECT_DIR$/Storefront 2.0.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/AddToCartServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/CartHandler.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/NumberFormatException.java" />
@@ -723,24 +776,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0810cbb7-a89e-486f-a5f8-5d123d8f6cf0/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/12393cf6-99b0-48d9-9689-0b375b055d89/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4c66324b-b3d1-4b77-a329-9f19146c9c68/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Storefront 2.0.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../DBSample/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../DBSample/src/CreateCoffeeDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1328">
-          <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
+        <state relative-caret-position="170">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/wctc/my/mpetermann2/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="213" column="33" lean-forward="true" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="171" column="52" lean-forward="true" selection-start-line="171" selection-start-column="52" selection-end-line="171" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

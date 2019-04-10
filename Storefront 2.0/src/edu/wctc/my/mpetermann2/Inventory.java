@@ -1,8 +1,6 @@
 package edu.wctc.my.mpetermann2;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -14,13 +12,16 @@ public class Inventory {
 
     //Instantiate the inventory
     private Inventory() {
+        inv = new ArrayList<>();
+
         if(!_dbExists) {
             createDatabase();
             addContent();
+            _dbExists = true;
         }
 
-        inv = new ArrayList<>();
 
+        /*
         inv.add(new Product(
                 0,
                 "Nevada Jack Casino Grade Ceramic 10-gram Poker Chip Pack of 50",
@@ -121,13 +122,14 @@ public class Inventory {
                 64.99,
                 "Storage"
         ));
+        */
     }
 
     //Instantiate the database
     public static void createDatabase() {
         try {
             //Create a connection
-            Connection conn = DriverManager.getConnection("jdbc:derby:CoffeeDB;create=true");
+            Connection conn = DriverManager.getConnection("jdbc:derby:StoreDB;create=true");
 
             //Drop existing tables
             dropTables(conn);
@@ -164,13 +166,15 @@ public class Inventory {
             stmt.execute(
                     "CREATE TABLE Product(" +
                             "ProductId INT NOT NULL PRIMARY KEY, " +
-                            "ProductName VARCHAR(MAX), " +
-                            "Description VARCHAR(MAX), " +
+                            "ProductName VARCHAR2(32767), " +
+                            "Description VARCHAR2(32767), " +
                             "Price DOUBLE, " +
-                            "Category VARCHAR(MAX)" +
+                            "Category VARCHAR2(32767)" +
                             ")"
             );
-        } catch(Exception e){}
+        } catch(Exception e){
+            inv.add(new Product(0, "item name", e.getMessage(),
+                    new String[]{"http://placehold.it/500x500"}, 45.99, "category"));}
     }
 
     //Instantiate the images table
@@ -190,7 +194,7 @@ public class Inventory {
     public static void addContent() {
         try {
             //Create a connection
-            Connection conn = DriverManager.getConnection("jdbc:derby:CoffeeDB;create=true");
+            Connection conn = DriverManager.getConnection("jdbc:derby:StoreDB");
 
             //Add rows
             addProducts(conn);
@@ -205,8 +209,16 @@ public class Inventory {
             Statement stmt = conn.createStatement();
 
             //Add each product
-            stmt.execute(
-                    ""
+            stmt.executeUpdate(
+                    "INSERT INTO Product " +
+                            "(ProductId, ProductName, Description, Price, Category) " +
+                            "VALUES (0, 'Nevada Jack Casino Grade Ceramic 10-gram Poker Chip Pack of 50', " +
+                            "'These premium poker chips are made with casino grade ceramic—the same ceramic Casinos " +
+                            "prefer! Those looking for an authentic experience should look no further. Available in 9 " +
+                            "colorful denominations ranging from $0.25 to $5,000, all artwork is printed directly on the " +
+                            "chip using a dye-sublimation process and incorporates Old West style with clear, easy-to-read " +
+                            "denominations. The ceramic’s grippy texture makes stacking these chips a breeze.', " +
+                            "39.99, 'Chips')"
             );
         } catch(Exception e){}
     }
@@ -217,19 +229,53 @@ public class Inventory {
             Statement stmt = conn.createStatement();
 
             //Add each image
-            stmt.execute(
-                    ""
+            stmt.executeUpdate(
+                    "INSERT INTO Image " +
+                            "VALUES('https://images-na.ssl-images-amazon.com/images/I/51enCt3eMNL.jpg')"
+            );
+            stmt.executeUpdate(
+                    "INSERT INTO Image " +
+                            "VALUES('https://images-na.ssl-images-amazon.com/images/I/511bu6pblNL.jpg')"
+            );
+            stmt.executeUpdate(
+                    "INSERT INTO Image " +
+                            "VALUES('https://images-na.ssl-images-amazon.com/images/I/51McGAZBK1L.jpg')"
             );
         } catch(Exception e){}
     }
 
-    //Singleton inventory
+    //Retrieve inventory from database
     public static ArrayList<Product> getInventory() {
-        //If the inventory is not generated, generate it
-        if(inv == null)
+        ArrayList<Product> inventory = new ArrayList<>();
+
+        if(!_dbExists)
             new Inventory();
 
-        //Return the current inventory
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:derby:StoreDB");
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(
+                    "SELECT * FROM Product"
+            );
+
+            //Loop over the result set
+            while(rs.next()) {
+                int id = rs.getInt("ProductId");
+                String name = rs.getString("ProductName");
+                String desc = rs.getString("Description");
+                double price = rs.getDouble("Price");
+                String cat = rs.getString("Category");
+
+                //Add a new Product to the inventory
+                inventory.add(new Product(id, name, desc, new String[]{"http://placehold.it/500x500"} ,price, cat));
+            }
+
+            //Clean up
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch(Exception e){}
+
         return inv;
     }
 
